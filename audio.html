@@ -1,0 +1,106 @@
+<!DOCTYPE html "-//W3C//DTD HTML 4.01 Transitional//EN"
+  "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+  rel="stylesheet">
+  <link href="https://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/flick/jquery-ui.css">
+  <link rel="stylesheet" href="https://pujashanti.web.id/media/player/css/audio-player.css">
+  <title>Playlist Lagu Religi - Puja Shanti</title>
+
+</head>
+<body>
+<div class="container alert alert-dark">
+</div>
+<div class="card" ></div>
+  <section class="audio-player text-dark" style="margin-top:2px">
+    <div class=" ">
+      <div class="card-body bg-warning text-light" style="width: auto;">
+        <h2 class="card-title col text-center">Puja Shanti</h2>
+        <div class="row align-items-center text-dark mt-4 mb-3 mx-0">
+          <i id="play-button"class="material-icons play-pause text-dark mr-2" aria-hidden="true">play_circle_outline</i>
+          <i id="pause-button"class="material-icons play-pause d-none text-dark mr-2" aria-hidden="true">pause_circle_outline</i>
+          <i id="next-button"class="material-icons text-dark ml-2 mr-3" aria-hidden="true">skip_next</i>
+          <div class="col ml-auto rounded-circle border border-dark p-2">
+            <img id="thumbnail" class="img-fluid rounded-circle" src="https://pujashanti.web.id/wp-content/uploads/2022/07/IMG_20220724_231910.webp" alt="">
+          </div>
+        </div>
+        <div class="p-0 m-0" id="now-playing">
+          <p class="font-italic mb-0">Now Playing: </p>
+          <p class="lead" id="title"></p>
+        </div>
+        <div class="progress-bar progress bg-dark col-12 mb-3">
+        </div>
+      </div>
+
+<div class="card bg-dark text-white" style="margin-top:2px">
+      <h5 style="text-align: center; margin-top:3px"><marquee bgcolor="" direction="left" scrollamount="2" align="center" height="25px" onmouseover="this.stop()" onmouseout="this.start()"><span style="margin-top:5px;"><b>Playlist 1</b></span></marquee> </h5>
+     </div>
+
+      <ul class="playlist list-group list-group-flush">
+           <li audio_url="https://firebasestorage.googleapis.com/v0/b/puja-shanti-apps.appspot.com/o/Mp3%2FDurga_Devi_Sthuti?alt=media&token=ffde7224-d2f2-4bea-ab54-4ba8207b7ee2"
+        img_url="https://pujashanti.web.id/wp-content/uploads/2021/02/IMG_20220731_221948.webp"
+        class="active list-group-item playlist-item">Durga Devi Stuti </li>
+        
+          <li audio_url="https://firebasestorage.googleapis.com/v0/b/puja-shanti-apps.appspot.com/o/Mp3%2FShivaya-Namah-Om.mp3?alt=media&token=04230935-e23f-41bd-8409-c498639d4886"
+        class="list-group-item playlist-item"
+        img_url="https://pujashanti.web.id/wp-content/uploads/2021/02/IMG_20220725_125230.webp">
+        Shivay Namah OM</li>
+
+           <li audio_url="https://firebasestorage.googleapis.com/v0/b/puja-shanti-apps.appspot.com/o/Mp3%2FSarva_Mangal_Maangalye___Durga_Sloka_from_Devi_Mahatmyam___Anuradha_Paudwal.mp3?alt=media&token=e9934696-cc42-4407-aa30-b649007d56bc"
+        class="list-group-item playlist-item"
+        img_url="https://pujashanti.web.id/wp-content/uploads/2024/04/T7uXx8oua88r2jpeilF7-2-55vtz.jpg">
+        Devi Mahatmyam mantra</li>
+ 
+               <li audio_url="https://firebasestorage.googleapis.com/v0/b/puja-shanti-apps.appspot.com/o/Mp3%2FOm_Namah_Shivay_by_Om_Voices.mp3?alt=media&token=7939ef0d-454c-4a8f-8ea7-26d6c142c2e4"
+        class="list-group-item playlist-item"
+        img_url="https://pujashanti.web.id/wp-content/uploads/2021/07/729202104324.webp">
+        Om Namah Shivaya by Om Voices </li>
+
+         <li audio_url="https://firebasestorage.googleapis.com/v0/b/puja-shanti-apps.appspot.com/o/Mp3%2Fshiva%20maha%20mrtyunjaya%20mantra.mp3?alt=media&token=40a83a2d-3dce-490d-a9ca-19217a44b376"
+        class="list-group-item playlist-item"
+        img_url="https://pujashanti.web.id/wp-content/uploads/2024/04/A6AKmaA0zM6mIijo8JnH-1-p8k0g.jpg">Maha Mrityunjaya Mantram </li>
+        <li audio_url="https://firebasestorage.googleapis.com/v0/b/puja-shanti-apps.appspot.com/o/Mp3%2FShiva%20Panchakshara%20stotra%20by-%20Little%20GIrl.mp3?alt=media&token=ec6d8b35-6638-48e2-9a20-ea2fd11d342e"
+        class="list-group-item playlist-item"
+        img_url="https://pujashanti.web.id/wp-content/uploads/2024/04/SOtkGvw3pbbYK9QtfUtM-1-cdjws.jpg">Shiva Panchakshara stotra by little girl</li>
+
+                <li audio_url="https://firebasestorage.googleapis.com/v0/b/puja-shanti-apps.appspot.com/o/Mp3%2FGuru%20puja.mp3?alt=media&token=314ec309-85e9-4806-a962-9f7b21cef17d"
+        class="list-group-item playlist-item"
+        img_url="https://pujashanti.web.id/wp-content/uploads/2024/04/A6AKmaA0zM6mIijo8JnH-1-p8k0g.jpg">Guru Puja</li>
+            <li audio_url="https://firebasestorage.googleapis.com/v0/b/puja-shanti-apps.appspot.com/o/Mp3%2FJagaljalapalam_Srhi%20Hari%20Vishnu%20stotram.mp3?alt=media&token=70189a32-beaf-42b5-a1f8-34d064905f3e"
+        class="list-group-item playlist-item"
+        img_url="https://pujashanti.web.id/wp-content/uploads/2024/04/dsp0o5gRXZch56heZjfL-1-pizau.jpg">Shri Hare Vishnu Stotram </li>
+            
+         <li audio_url="https://firebasestorage.googleapis.com/v0/b/puja-shanti-apps.appspot.com/o/Mp3%2FShri%20Krishna%20Govinda%20Hare%20Murari.mp3?alt=media&token=385b0ca1-0f42-428d-9525-d0300873b4fb"
+        class="list-group-item playlist-item"
+        img_url="https://pujashanti.web.id/wp-content/uploads/2022/07/72920211068.webp">Shri Krishna Govinda Hare Murari </li>
+
+           <li audio_url="https://firebasestorage.googleapis.com/v0/b/puja-shanti-apps.appspot.com/o/Mp3%2FSaraswati_Vandana.mp3?alt=media&token=541b9105-86f3-45f0-8772-778e95a5aeb8"
+        class="list-group-item playlist-item"
+        img_url="https://pujashanti.web.id/wp-content/uploads/2024/04/T7uXx8oua88r2jpeilF7-3-v2kxo.jpg">Saraswati Vandana </li>
+
+           <li audio_url="https://firebasestorage.googleapis.com/v0/b/puja-shanti-apps.appspot.com/o/Mp3%2Fgayatri_mantram_yg_menyejukan_hati.......mp3?alt=media&token=dfeaab8a-649b-4c07-96a9-1feb1802fbf4"
+        class="list-group-item playlist-item"
+        img_url="https://pujashanti.web.id/wp-content/uploads/2024/04/szvrkUSY2hw6Tmu7S2OY-1-tt7dt.jpg">Gayatri mantra</li>
+
+            </ul>
+    </div>
+      <!-- <div class="card-body-secondary">
+      <a href="#" class="card-link">Card link</a>
+      <a href="#" class="card-link">Another link</a>
+    </div> -->
+  </div>
+  <audio id="audio-player" class="d-none" src="" type="audio/mp3" controls="controls"></audio>
+</section>
+<hr>
+</div>
+<script src="js/jquery-3.2.1.min.js" integrity="sha384-xBuQ/xzmlsLoJpyjoggmTEz8OWUFM0/RC5BsqQBDX2v5cMvDHcMakNTNrHIW2I5f" crossorigin="anonymous"></script>
+<script src="js/jquery-ui-slider.js" charset="utf-8"></script>
+<script src="js/audioPlayer.js" charset="utf-8"></script>
+</body>
+</html>
